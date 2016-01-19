@@ -11,6 +11,7 @@ import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 import static org.junit.Assert.*;
+import java.util.Random;
 
 /**
  *
@@ -86,6 +87,20 @@ public class CPD4414Assignment1GaddDaveTest {
         String s = "bob";
         int i = 2;
         String expResult = "bobbob";
+        CPD4414Assignment1GaddDave instance = new CPD4414Assignment1GaddDave();
+        String result = instance.stringPower(s, i);
+        assertEquals(expResult, result);
+    }
+    @Test
+    public void testRandomCase() {
+        System.out.println("testRandomCase");
+        Random rand = new Random();
+        String s = "A ";
+        int i = rand.nextInt((10 - 1) + 1) + 1;
+        String expResult = "";
+        for (int a = 0; a < i; a++) {
+            expResult += s;
+        }
         CPD4414Assignment1GaddDave instance = new CPD4414Assignment1GaddDave();
         String result = instance.stringPower(s, i);
         assertEquals(expResult, result);
