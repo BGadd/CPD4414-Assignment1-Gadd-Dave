@@ -60,5 +60,24 @@ public class CPD4414Assignment1GaddDaveTest {
         String result = instance.stringPower(s, i);
         assertEquals(expResult, result);
     }
-    
+    @Test
+    public void testLessThanOneShouldReturnNull(){
+        System.out.println("testLessThanOneShouldReturnNull");
+        String s = "";
+        int i = 0;
+        CPD4414Assignment1GaddDave instance = new CPD4414Assignment1GaddDave();
+        String expResult = null;
+        String result = instance.stringPower(s, i);
+        assertEquals(expResult, result);
+    }
+    @Test
+    public void testStringAndOneShouldReturnString(){
+        System.out.println("testStringAndOneShouldReturnString");
+        String s = "Sample String";
+        int i = 1;
+        String expResult = "Sample String";
+        CPD4414Assignment1GaddDave instance = new CPD4414Assignment1GaddDave();
+        String result = instance.stringPower(s, i);
+        assertEquals(expResult, result);
+    }
 }
