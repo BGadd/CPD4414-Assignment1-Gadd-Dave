@@ -17,5 +17,7 @@ public class CPD4414Assignment1GaddDave {
     public static void main(String[] args) {
         // TODO code application logic here
     }
+    public String stringPower(String s, int i){
     
+    }
 }
