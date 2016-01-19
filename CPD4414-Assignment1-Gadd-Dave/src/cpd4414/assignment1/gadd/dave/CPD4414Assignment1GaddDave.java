@@ -22,7 +22,12 @@ public class CPD4414Assignment1GaddDave {
         if (i < 1) {
             result = null;
         }
+
+        if (i == 1){
+            result = s;
+        }
         return result;
     }
+    
 }
 
