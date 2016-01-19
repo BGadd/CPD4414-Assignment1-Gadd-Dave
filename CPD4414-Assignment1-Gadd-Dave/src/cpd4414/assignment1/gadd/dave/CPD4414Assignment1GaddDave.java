@@ -15,17 +15,23 @@ public class CPD4414Assignment1GaddDave {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        System.out.println("main method here.");
     }
-    public String stringPower(String s, int i){
+    public static String stringPower(String s, int i){
         String result = "";
         if (i < 1) {
             result = null;
+            System.out.println(result);
+            return result;
         }
-
-        if (i == 1){
-            result = s;
+        if (s.equals("")) {
+            System.out.println(result);
+            return result;
         }
+        for (int a = 0; a < i; a++) {
+            result += s;
+        }
+        System.out.println(result);
         return result;
     }
     
