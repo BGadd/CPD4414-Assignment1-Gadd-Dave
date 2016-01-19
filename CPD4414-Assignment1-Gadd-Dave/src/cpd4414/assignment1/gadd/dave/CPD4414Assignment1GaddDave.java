@@ -18,6 +18,10 @@ public class CPD4414Assignment1GaddDave {
         // TODO code application logic here
     }
     public String stringPower(String s, int i){
-    
-    }
+        if(s == ""){
+            return "";
+        }
+        else{
+        return s;
+    }}
 }
