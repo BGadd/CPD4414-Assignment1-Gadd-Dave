@@ -80,4 +80,14 @@ public class CPD4414Assignment1GaddDaveTest {
         String result = instance.stringPower(s, i);
         assertEquals(expResult, result);
     }
+    @Test
+    public void testStringAndTwoShouldReturnStringDoubled() {
+        System.out.println("testStringAndTwoShouldReturnStringDoubled");
+        String s = "bob";
+        int i = 2;
+        String expResult = "bobbob";
+        CPD4414Assignment1GaddDave instance = new CPD4414Assignment1GaddDave();
+        String result = instance.stringPower(s, i);
+        assertEquals(expResult, result);
+    }
 }
